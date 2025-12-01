@@ -136,16 +136,13 @@ CALCULATE(
 
 ## STEP 4: Build PAGE 1 - Executive Summary (40 minutes)
 
-### 4.1 Set Page Size
-1. Click empty space on canvas
-2. In **Visualizations** → **Format** (paint roller icon)
-3. **Page information** → **Type** = Custom
-4. Width: 1920, Height: 1080 (or 1280 x 720)
+> **Page Size:** Keep default 16:9 (1280px x 720px) - do not change
+> **Max Visualizations:** 4 charts/graphs per page (KPI cards don't count)
 
-### 4.2 Rename Page
+### 4.1 Rename Page
 - Right-click page tab at bottom → **Rename** → "Executive Summary"
 
-### 4.3 Add Title Bar
+### 4.2 Add Title Bar
 1. **Insert** → **Text Box**
 2. Type: "🏭 GLOBAL SUPPLY CHAIN PERFORMANCE - EXECUTIVE SUMMARY"
 3. Font: Segoe UI Bold, 24pt
@@ -153,7 +150,7 @@ CALCULATE(
 5. Background color: #1E3A5F (Navy Blue)
 6. Font color: White
 
-### 4.4 Add KPI Cards (4 across the top)
+### 4.3 Add KPI Cards (4 across the top)
 
 **Card 1: Total Spend**
 1. Click **Card** visual (single number icon)
@@ -183,7 +180,7 @@ CALCULATE(
 4. Position: Next to Card 3
 5. **This is key for the data story!**
 
-### 4.5 Add Order Status Breakdown (Donut Chart) - LEFT SIDE
+### 4.4 VISUAL 1: Order Status Breakdown (Donut Chart)
 
 1. Click **Donut Chart**
 2. Configure:
@@ -199,7 +196,7 @@ CALCULATE(
 4. Size: ~350px x 300px
 5. Position: Left side, below KPIs
 
-### 4.6 Add Spend Trend Chart (Line Chart) - MIDDLE
+### 4.5 VISUAL 2: Spend Trend Chart (Line Chart)
 
 1. Click **Line Chart** visual
 2. Configure:
@@ -211,7 +208,7 @@ CALCULATE(
 4. Size: ~450px wide, 280px tall
 5. Position: Center, below KPIs
 
-### 4.7 Add Delivery Performance Trend (Line Chart) - RIGHT
+### 4.6 VISUAL 3: Delivery Performance Trend (Line Chart)
 
 1. Click **Line Chart**
 2. Configure:
@@ -226,7 +223,7 @@ CALCULATE(
    - Title: "🚚 ON-TIME DELIVERY TREND"
 5. Position: Right side, same row as Spend Trend
 
-### 4.8 Add Spend by Category (Donut Chart) - BOTTOM LEFT
+### 4.7 VISUAL 4: Spend by Category (Donut Chart)
 
 1. Click **Donut Chart**
 2. Configure:
@@ -238,14 +235,14 @@ CALCULATE(
 4. Size: ~350px x 280px
 5. Position: Bottom left
 
-### 4.9 Add Date Slicer - TOP RIGHT
+### 4.8 Add Date Slicer
 
 1. Click **Slicer** visual
 2. Drag purchase_orders → order_date
 3. Format as dropdown or date range
 4. Position: Top right corner, next to KPIs
 
-### 4.10 Add Navigation Button to Page 2
+### 4.9 Add Navigation Button to Page 2
 
 1. **Insert** → **Buttons** → **Blank**
 2. Text: "🔍 VIEW SUPPLIER DETAILS →"
@@ -261,6 +258,9 @@ CALCULATE(
 ---
 
 ## STEP 5: Build PAGE 2 - Supplier Deep Dive (40 minutes)
+
+> **Page Size:** Keep default 16:9 (1280px x 720px) - do not change
+> **Max Visualizations:** 4 charts/graphs per page (KPI cards don't count)
 
 ### 5.1 Add New Page
 - Click the **+** at bottom of screen
@@ -285,7 +285,7 @@ CALCULATE(
 2. Format: Red text (#DC3545)
 3. **Key story element!**
 
-### 5.4 Add Top 10 Suppliers Bar Chart - LEFT SIDE
+### 5.4 VISUAL 1: Top 10 Suppliers Bar Chart
 
 1. Click **Clustered Bar Chart**
 2. Configure:
@@ -302,7 +302,7 @@ CALCULATE(
 5. Size: ~450px x 350px
 6. Position: Left side, below KPIs
 
-### 5.5 Add Delayed Orders by Supplier (Bar Chart) - RIGHT SIDE ⚠️ KEY VISUAL
+### 5.5 VISUAL 2: Delayed Orders by Supplier (Bar Chart) ⚠️ KEY VISUAL
 
 1. Click **Clustered Bar Chart**
 2. Configure:
@@ -317,7 +317,7 @@ CALCULATE(
 6. Size: ~450px x 350px
 7. Position: Right side, same row as Top 10
 
-### 5.6 Add Supplier Scorecard Table - BOTTOM
+### 5.6 VISUAL 3: Supplier Scorecard Table
 
 1. Click **Table** visual
 2. Add columns:
@@ -338,7 +338,7 @@ CALCULATE(
 6. Size: Full width, ~250px tall
 7. Position: Bottom of page
 
-### 5.7 Add Supplier Filter (Slicer) - TOP RIGHT
+### 5.7 Add Supplier Filter (Slicer)
 
 1. Click **Slicer**
 2. Drag suppliers → supplier_name
@@ -534,60 +534,58 @@ Before the interview:
 
 ---
 
-## 📐 FINAL LAYOUT REFERENCE
+## 📐 FINAL LAYOUT REFERENCE (16:9 @ 1280x720)
 
-### Page 1: Executive Summary
+### Page 1: Executive Summary (4 Visuals + 4 Cards)
 ```
-┌─────────────────────────────────────────────────────────────┐
-│  🏭 GLOBAL SUPPLY CHAIN - EXECUTIVE SUMMARY   [Date ▼]     │
-├─────────────────────────────────────────────────────────────┤
-│ ┌─────────┐ ┌─────────┐ ┌─────────┐ ┌─────────┐            │
-│ │ $42.5M  │ │  54.1%  │ │   100   │ │   12⚠️  │            │
-│ │ Spend   │ │ On-Time │ │ Orders  │ │ Delayed │            │
-│ └─────────┘ └─────────┘ └─────────┘ └─────────┘            │
-├─────────────────────────────────────────────────────────────┤
-│ ┌─────────────┐ ┌───────────────┐ ┌───────────────┐        │
-│ │   STATUS    │ │ SPEND TREND   │ │ ON-TIME TREND │        │
-│ │   DONUT     │ │    📈         │ │    📈         │        │
-│ │  ○ 69%      │ │               │ │  --- Target   │        │
-│ │  Delivered  │ │               │ │               │        │
-│ └─────────────┘ └───────────────┘ └───────────────┘        │
-│ ┌─────────────────────────────┐  ┌───────────────────────┐ │
-│ │     SPEND BY CATEGORY       │  │  [VIEW SUPPLIER       │ │
-│ │         DONUT               │  │   DETAILS →]          │ │
-│ └─────────────────────────────┘  └───────────────────────┘ │
-└─────────────────────────────────────────────────────────────┘
+┌──────────────────────────────────────────────────────────────────┐
+│  🏭 GLOBAL SUPPLY CHAIN - EXECUTIVE SUMMARY        [Date ▼]     │
+├──────────────────────────────────────────────────────────────────┤
+│  ┌────────┐  ┌────────┐  ┌────────┐  ┌────────┐                  │
+│  │$42.5M  │  │ 54.1%  │  │  100   │  │  12⚠️  │    ← 4 KPI CARDS │
+│  │ Spend  │  │On-Time │  │Orders  │  │Delayed │                  │
+│  └────────┘  └────────┘  └────────┘  └────────┘                  │
+├──────────────────────────────────────────────────────────────────┤
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐            │
+│  │ 1. STATUS    │  │ 2. SPEND     │  │ 3. ON-TIME   │            │
+│  │    DONUT     │  │    TREND     │  │    TREND     │            │
+│  │   ○ 69%      │  │      📈      │  │  --- Target  │            │
+│  │  Delivered   │  │              │  │      📈      │            │
+│  └──────────────┘  └──────────────┘  └──────────────┘            │
+│  ┌──────────────────────────────┐  ┌───────────────────────────┐ │
+│  │ 4. SPEND BY CATEGORY         │  │  [VIEW SUPPLIER DETAILS→] │ │
+│  │          DONUT               │  │         (button)          │ │
+│  └──────────────────────────────┘  └───────────────────────────┘ │
+└──────────────────────────────────────────────────────────────────┘
 ```
 
-### Page 2: Supplier Deep Dive
+### Page 2: Supplier Deep Dive (3 Visuals + 3 Cards)
 ```
-┌─────────────────────────────────────────────────────────────┐
-│  🔍 SUPPLIER PERFORMANCE DEEP DIVE        [Supplier ▼]     │
-├─────────────────────────────────────────────────────────────┤
-│ ┌─────────┐ ┌─────────┐ ┌─────────┐                        │
-│ │   15    │ │  89.7%  │ │   4⚠️   │                        │
-│ │Suppliers│ │ Avg Qual│ │ At Risk │                        │
-│ └─────────┘ └─────────┘ └─────────┘                        │
-├─────────────────────────────────────────────────────────────┤
-│ ┌─────────────────────┐  ┌─────────────────────┐           │
-│ │ TOP 10 SUPPLIERS    │  │ ⚠️ DELAYED ORDERS   │           │
-│ │ BY SPEND            │  │ BY SUPPLIER         │           │
-│ │ S001 ████████       │  │ S006 ████           │           │
-│ │ S007 ███████        │  │ S009 ████           │           │
-│ │ S003 ██████         │  │ S011 ███            │           │
-│ │ ...                 │  │ S004 █              │           │
-│ └─────────────────────┘  └─────────────────────┘           │
-│ ┌───────────────────────────────────────────────────────┐  │
-│ │ 📊 SUPPLIER SCORECARD                                 │  │
-│ │ Supplier        │ Region │ Quality │ On-Time │ Delays │  │
-│ │ S006 Quality... │ Ohio   │ 72% 🔴  │ 68% 🔴  │ 4      │  │
-│ │ S009 Metal...   │ Texas  │ 77% 🔴  │ 71% 🔴  │ 4      │  │
-│ └───────────────────────────────────────────────────────┘  │
-│ ┌─────────────────┐                                        │
-│ │ ← BACK TO       │                                        │
-│ │   SUMMARY       │                                        │
-│ └─────────────────┘                                        │
-└─────────────────────────────────────────────────────────────┘
+┌──────────────────────────────────────────────────────────────────┐
+│  🔍 SUPPLIER PERFORMANCE DEEP DIVE           [Supplier ▼]       │
+├──────────────────────────────────────────────────────────────────┤
+│  ┌────────┐  ┌────────┐  ┌────────┐                              │
+│  │   15   │  │ 89.7%  │  │  4⚠️   │            ← 3 KPI CARDS     │
+│  │Supplier│  │Avg Qual│  │At Risk │                              │
+│  └────────┘  └────────┘  └────────┘                              │
+├──────────────────────────────────────────────────────────────────┤
+│  ┌────────────────────────┐  ┌────────────────────────┐          │
+│  │ 1. TOP 10 SUPPLIERS    │  │ 2. ⚠️ DELAYED ORDERS   │          │
+│  │    BY SPEND            │  │    BY SUPPLIER         │          │
+│  │ S001 ████████████      │  │ S006 ████              │          │
+│  │ S007 ██████████        │  │ S009 ████              │          │
+│  │ S003 ████████          │  │ S011 ███               │          │
+│  └────────────────────────┘  └────────────────────────┘          │
+│  ┌────────────────────────────────────────────────────────────┐  │
+│  │ 3. 📊 SUPPLIER SCORECARD                                   │  │
+│  │ Supplier         │ Region │ Quality │ On-Time │ Delays     │  │
+│  │ S006 Quality...  │ Ohio   │  72% 🔴 │  68% 🔴 │   4        │  │
+│  │ S009 Metal...    │ Texas  │  77% 🔴 │  71% 🔴 │   4        │  │
+│  └────────────────────────────────────────────────────────────┘  │
+│  ┌───────────────────┐                                           │
+│  │ ← BACK TO SUMMARY │                                           │
+│  └───────────────────┘                                           │
+└──────────────────────────────────────────────────────────────────┘
 ```
 
 ---
