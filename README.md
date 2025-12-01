@@ -1,82 +1,89 @@
 # 🎯 Northrop Grumman Database Engineer Interview Prep
 
-## Monday, December 2, 2024 - Analytics Manager 3 Interview
+## Monday, December 2, 2024 - Analytics Manager Interview
 
 ---
 
 ## 📂 FILES IN THIS FOLDER
 
-| File | Purpose | When to Use |
-|------|---------|-------------|
-| `NORTHROP_DATABASE_ENGINEER_BATTLE_PLAN.md` | **MASTER DOCUMENT** - Full 3-day schedule | Start here! Follow hour-by-hour |
-| `SQL_WINDOW_FUNCTIONS_CHEATSHEET.md` | Quick reference for window functions | Print & tape to wall during practice |
-| `SQL_PRACTICE_PROBLEMS.md` | 30+ SQL problems with solutions | Practice daily, do on paper |
-| `DASHBOARD_PRESENTATION_SCRIPT.md` | Fill-in template for your dashboard | Complete with fiancée Saturday |
-| `STAR_STORIES_REFERENCE.md` | 7 pre-crafted behavioral stories | Practice out loud Sunday |
-| `INTERVIEW_DAY_QUICK_CARD.md` | One-page cheat sheet | Print for Monday morning |
+| File | Purpose | Status |
+|------|---------|--------|
+| `ordersDashboard.pbix` | **YOUR DASHBOARD** - The actual Power BI file | ✅ Complete |
+| `POWERBI_BUILD_GUIDE.md` | Step-by-step build guide + data story | ✅ Updated |
+| `POWERBI_DASHBOARD_DESIGN.md` | Dashboard design specifications | ✅ Updated |
+| `DASHBOARD_PRESENTATION_SCRIPT.md` | Complete presentation script | ✅ Updated |
+| `INTERVIEW_DAY_QUICK_CARD.md` | One-page cheat sheet with key numbers | ✅ Updated |
+| `SQL_QUERIES_FOR_DASHBOARD.md` | SQL queries demonstrating skills | Reference |
+| `SQL_WINDOW_FUNCTIONS_CHEATSHEET.md` | Quick reference for window functions | Reference |
+| `SQL_PRACTICE_PROBLEMS.md` | SQL problems with solutions | Practice |
+| `STAR_STORIES_REFERENCE.md` | Behavioral stories | Practice |
+| `NORTHROP_DATABASE_ENGINEER_BATTLE_PLAN.md` | 3-day study schedule | Reference |
 
 ---
 
-## ⚡ YOUR 3-DAY SCHEDULE AT A GLANCE
+## 📊 YOUR DASHBOARD: Key Numbers to Memorize
 
-### FRIDAY (Today) - 6 hours
-- 18:00-19:30: SQL JOINs Refresher
-- 19:45-21:30: Window Functions Deep Dive
-- 21:30-22:30: Dashboard Review Session 1
-- 22:30-24:00: Python ETL Concepts
+### Page 1 - Executive Summary
+| KPI | Value |
+|-----|-------|
+| Total Spend YTD | **$39.7M** |
+| On-Time Delivery % | **84.06%** (below 95% target) |
+| Order Count | **100** |
+| Delayed Orders | **12** (12% of pipeline) |
 
-### SATURDAY - 8 hours
-- 09:00-12:00: Window Functions MASTERY (practice problems)
-- 12:30-14:30: Dashboard Presentation MASTERY
-- 14:45-16:45: SQL Interview Patterns
-- 16:45-17:45: STAR Story Transformation
-- 18:00-19:00: Supply Chain Crash Course
-- 19:00-21:00: Dashboard Rehearsal + Mock Questions
+### Page 2 - Supplier Performance
+| KPI | Value |
+|-----|-------|
+| Supplier Count | **14** |
+| Average Quality Rating | **91.23%** |
+| At Risk Suppliers | **4** (quality < 88%) |
 
-### SUNDAY - 8 hours
-- 09:00-12:00: SQL Speed Drills
-- 12:30-15:00: Dashboard Final Rehearsal
-- 15:15-17:15: Full Mock Interview Simulation
-- 17:15-18:15: STAR Stories Final Review
-- 18:15-19:15: Final Concept Review
-- 19:15-21:00: Logistics + Relaxation
-
-### MONDAY (Interview Day)
-- 08:00-08:30: Light SQL review (don't cram!)
-- 08:30-09:00: Dashboard mental walkthrough
-- 09:00-09:30: Mental preparation
-- 09:30-10:00: Final logistics check
+### Status Breakdown
+- Delivered: **69%**
+- In Transit: **16%**
+- Delayed: **12%**
+- Open: **3%**
 
 ---
 
-## 🔑 KEY RESOURCES
+## 📖 THE DATA STORY (30-Second Version)
 
-### SQL Practice Platforms
-- **SQLZoo:** https://sqlzoo.net/wiki/SQL_Tutorial
-- **LeetCode SQL:** https://leetcode.com/problemset/database/
-- **HackerRank SQL:** https://www.hackerrank.com/domains/sql
-- **DataLemur:** https://datalemur.com/
-- **StrataScratch:** https://www.stratascratch.com/
-
-### Video Tutorials
-- **Window Functions:** Search "techTFQ SQL window functions" on YouTube
-- **JOINs:** Search "Programming with Mosh SQL joins" on YouTube
-- **Data Storytelling:** Search "Storytelling with Data Cole Nussbaumer" on YouTube
+> "12% of orders are delayed, all caused by 5 suppliers. 4 of these suppliers have quality ratings below 88% - they're flagged as at-risk in the scorecard with red highlighting. **Low quality = delays.** My recommendation: Implement a Supplier Performance Improvement Program for these 4 suppliers."
 
 ---
 
-## 🎯 SUCCESS METRICS
+## 🎤 5-MINUTE PRESENTATION FLOW
 
-By Monday morning, you should be able to:
+| Time | Page | What to Say |
+|------|------|-------------|
+| 0:00-1:30 | Page 1 | "$39.7M spend, 84% on-time (below target), 12 delayed" |
+| 1:30-2:00 | → | "What's causing this? Let me show you..." |
+| 2:00-3:30 | Page 2 | "5 suppliers cause ALL delays, 4 are at-risk" |
+| 3:30-4:30 | Page 2 | "Red quality = red on-time = delays" |
+| 4:30-5:00 | Page 2 | **RECOMMENDATION: Supplier Improvement Program** |
 
-- [ ] Write a DENSE_RANK() PARTITION BY query from memory
-- [ ] Explain the difference between INNER JOIN and LEFT JOIN
-- [ ] Calculate a running total using window functions
-- [ ] Present your dashboard in 5-7 minutes confidently
-- [ ] Answer "Did someone help you?" honestly and impressively
-- [ ] Tell 3 STAR stories with data engineering terminology
-- [ ] Articulate what ETL means with YOUR examples
-- [ ] Name 3 supply chain KPIs
+---
+
+## 🎯 PROBLEM SUPPLIERS TO MENTION
+
+| Supplier | Quality | Delays |
+|----------|---------|--------|
+| Quality Fasteners Inc | 72.3% 🔴 | 3 |
+| Metal Fabrication Pro | 76.8% 🔴 | 3 |
+| Structural Dynamics Inc | 81.5% 🔴 | 3 |
+| Thermal Management Inc | 85.1% 🔴 | - |
+
+---
+
+## ✅ FINAL CHECKLIST
+
+- [ ] Dashboard file loads without errors
+- [ ] Can present in 5 minutes
+- [ ] Memorized key numbers
+- [ ] Know the data story
+- [ ] Know the recommendation
+- [ ] Prepared for Q&A
+- [ ] Screen share tested
 
 ---
 
@@ -84,15 +91,11 @@ By Monday morning, you should be able to:
 
 1. **Active Secret Clearance** - Mention in first 5 minutes!
 2. **Python Proficiency** - Transferable to ETL
-3. **Northrop Grumman Insider** - You know the culture
+3. **Clear Data Story** - Problem → Root Cause → Recommendation
 4. **Georgia Tech MSCS** - Demonstrates rigor
 5. **Proven Fast Learner** - Android/Java ramp-up story
 
 ---
 
-## 🚀 GO TIME
-
-Start with `NORTHROP_DATABASE_ENGINEER_BATTLE_PLAN.md` and follow the schedule.
-
-**You've got this!** 🎯
+**YOU'VE GOT THIS!** 🎯
 

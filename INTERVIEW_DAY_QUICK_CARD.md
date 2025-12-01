@@ -18,9 +18,47 @@
 
 ---
 
-## 📍 LOCATION STATEMENT
+## 📊 DASHBOARD KEY NUMBERS
 
-> "I'm particularly interested in the **California** location due to [personal reason], though I'm absolutely open to **Melbourne** as well. I'm flexible and committed to the opportunity regardless of location."
+### Page 1 - Executive Summary:
+| KPI | Value | Story |
+|-----|-------|-------|
+| Total Spend YTD | **$39.7M** | Total procurement volume |
+| On-Time Delivery | **84.06%** | Below 95% target - problem! |
+| Order Count | **100** | Total orders tracked |
+| Delayed Orders | **12** | 12% of pipeline - unacceptable |
+
+### Page 2 - Supplier Performance:
+| KPI | Value | Story |
+|-----|-------|-------|
+| Supplier Count | **14** | Active suppliers |
+| Avg Quality Rating | **91.23%** | Overall quality score |
+| At Risk Suppliers | **4** | Quality < 88% |
+
+### Status Breakdown:
+- Delivered: **69%**
+- In Transit: **16%**
+- Delayed: **12%**
+- Open: **3%**
+
+---
+
+## 📖 THE DATA STORY (30-Second Version)
+
+> "12% of orders are delayed, all caused by 5 suppliers. 4 of these suppliers have quality ratings below 88% - they're flagged as at-risk. **Low quality = delays.** My recommendation: Implement a Supplier Performance Improvement Program for these 4 suppliers."
+
+---
+
+## 🎯 THE PROBLEM SUPPLIERS
+
+| Supplier | Quality | Delays |
+|----------|---------|--------|
+| Quality Fasteners Inc | 72.3% 🔴 | 3 |
+| Metal Fabrication Pro | 76.8% 🔴 | 3 |
+| Structural Dynamics Inc | 81.5% 🔴 | 3 |
+| Thermal Management Inc | 85.1% 🔴 | - |
+| Advanced Materials Co | 88.4% 🟡 | 2 |
+| Defense Electronics LLC | 91.2% 🟢 | 1 |
 
 ---
 
@@ -46,11 +84,6 @@ WITH ranked AS (
 SELECT * FROM ranked WHERE rnk <= 3;
 ```
 
-### Running Total:
-```sql
-SUM(amount) OVER (ORDER BY date)
-```
-
 ### MSSQL Differences:
 - `TOP 10` not `LIMIT 10`
 - `GETDATE()` not `CURRENT_DATE`
@@ -58,12 +91,19 @@ SUM(amount) OVER (ORDER BY date)
 
 ---
 
-## 📊 DASHBOARD STRUCTURE
+## 📊 DASHBOARD WALKTHROUGH FLOW
 
-1. **Context** (30 sec): Business problem + stakeholder
-2. **Data** (30 sec): Sources + refresh frequency
-3. **Walkthrough** (2-3 min): Each visual + insight
-4. **Conclusion** (30 sec): Key insights + recommendations
+| Time | Page | What to Say |
+|------|------|-------------|
+| 0:00-0:30 | 1 | "Managing $39.7M in supply chain spend" |
+| 0:30-1:00 | 1 | "12 delayed orders - 12% of pipeline" |
+| 1:00-1:30 | 1 | "On-time below 95% target all year" |
+| 1:30-2:00 | → | "Let me show you what's causing this..." |
+| 2:00-2:30 | 2 | "4 suppliers flagged as at-risk" |
+| 2:30-3:30 | 2 | "5 suppliers cause ALL 12 delays" |
+| 3:30-4:00 | 2 | "Red = low quality = delays" |
+| 4:00-4:30 | 2 | "Clear pattern: quality correlates with delays" |
+| 4:30-5:00 | 2 | **"Recommend: Supplier Improvement Program"** |
 
 ---
 
@@ -99,19 +139,9 @@ SUM(amount) OVER (ORDER BY date)
 - I have clearance (massive advantage)
 - I know SQL and Python
 - I've built real data pipelines
+- My dashboard tells a clear story
 - I'm a proven fast learner
 - I belong here
-
----
-
-## ⏰ INTERVIEW FLOW
-
-| Section | Estimated Time | Your Prep |
-|---------|----------------|-----------|
-| SQL Technical | 30-45 min | Window functions, JOINs |
-| Dashboard | 15-20 min | Full walkthrough + Q&A |
-| Behavioral | 20-30 min | STAR stories |
-| Your Questions | 5-10 min | 5 prepared questions |
 
 ---
 
@@ -119,7 +149,7 @@ SUM(amount) OVER (ORDER BY date)
 
 - [ ] Resume (3 copies)
 - [ ] Questions printed
-- [ ] Dashboard file ready
+- [ ] Dashboard file ready (GSC_Performance_Dashboard.pbix)
 - [ ] Screen share tested
 - [ ] Water bottle
 - [ ] Deep breath
@@ -129,7 +159,7 @@ SUM(amount) OVER (ORDER BY date)
 
 ## 🏆 CLOSING STRONG
 
-> "I'm genuinely excited about this opportunity. My combination of **clearance**, **Python data engineering experience**, and **analytics background** makes me a strong fit. I'm eager to contribute to the supply chain team's data capabilities."
+> "I'm genuinely excited about this opportunity. My combination of **clearance**, **Python data engineering experience**, and **proven analytics skills** - as demonstrated by this dashboard - makes me a strong fit. I'm eager to contribute to the supply chain team's data capabilities."
 
 ---
 
