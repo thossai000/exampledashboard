@@ -1,0 +1,12 @@
+category_id,category_name,category_group
+C001,Electronics,Direct Materials
+C002,Raw Materials,Direct Materials
+C003,Mechanical Components,Direct Materials
+C004,Professional Services,Indirect
+C005,Fasteners & Hardware,Direct Materials
+C006,Composites,Direct Materials
+C007,Avionics Systems,Direct Materials
+C008,Tooling & Equipment,Indirect
+C009,Software Licenses,Indirect
+C010,Maintenance Services,Indirect
+

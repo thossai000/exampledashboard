@@ -1,0 +1,16 @@
+supplier_id,supplier_name,region,quality_rating,on_time_rating,contract_start,contract_end
+S001,Aerospace Components Inc,California,98.5,96.2,2022-01-01,2025-12-31
+S002,Defense Electronics LLC,Texas,91.2,84.5,2021-06-15,2024-06-14
+S003,Precision Parts Corp,Florida,99.1,97.5,2023-03-01,2026-02-28
+S004,Advanced Materials Co,California,88.4,79.2,2022-09-01,2025-08-31
+S005,Tech Systems Group,Arizona,95.5,92.1,2021-01-01,2024-12-31
+S006,Quality Fasteners Inc,Ohio,72.3,68.5,2023-01-15,2026-01-14
+S007,Composite Solutions,Washington,99.3,96.8,2022-04-01,2025-03-31
+S008,Avionics Plus,Georgia,94.2,89.3,2021-11-01,2024-10-31
+S009,Metal Fabrication Pro,Texas,76.8,71.2,2023-06-01,2026-05-31
+S010,Electronic Assembly Corp,California,93.6,88.7,2022-02-15,2025-02-14
+S011,Structural Dynamics Inc,Florida,81.5,74.8,2022-07-01,2025-06-30
+S012,Propulsion Systems Co,Alabama,97.8,94.5,2023-02-01,2026-01-31
+S013,Radar Technologies,Massachusetts,99.0,96.5,2021-09-01,2024-08-31
+S014,Flight Control Systems,California,96.2,91.8,2022-11-15,2025-11-14
+S015,Thermal Management Inc,Nevada,85.1,78.3,2023-04-01,2026-03-31

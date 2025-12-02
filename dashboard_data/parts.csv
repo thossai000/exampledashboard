@@ -1,0 +1,22 @@
+part_id,part_number,description,lead_time_days,unit_cost,category_id,criticality
+P001,AV-2847,Avionics Control Module,45,12500,C007,Critical
+P002,EL-9921,Electronic Sensor Array,30,8700,C001,Critical
+P003,MC-4455,Mechanical Actuator,60,4500,C003,High
+P004,RF-7733,RF Amplifier Unit,21,15600,C001,Critical
+P005,CM-1122,Composite Wing Panel,35,23400,C006,Critical
+P006,FH-3344,Fastener Kit Assembly,14,340,C005,Standard
+P007,AV-5566,Flight Computer Board,50,45000,C007,Critical
+P008,RM-7788,Raw Aluminum Stock 6061,10,1200,C002,Standard
+P009,EL-8899,Power Distribution Unit,28,7800,C001,High
+P010,MC-2233,Hydraulic Control Valve,42,5600,C003,High
+P011,AV-1234,Navigation Processor,55,38000,C007,Critical
+P012,EL-5678,Radar Transceiver Module,40,22500,C001,Critical
+P013,CM-9012,Carbon Fiber Fuselage Section,75,67000,C006,Critical
+P014,MC-3456,Landing Gear Assembly,90,125000,C003,Critical
+P015,FH-7890,Titanium Bolt Set,7,890,C005,Standard
+P016,RM-2345,Inconel Sheet Stock,21,4500,C002,High
+P017,EL-6789,Environmental Control Unit,35,18900,C001,High
+P018,AV-0123,Autopilot Servo Motor,30,9200,C007,Critical
+P019,MC-4567,Fuel System Valve,28,3400,C003,High
+P020,CM-8901,Thermal Protection Tile,45,5600,C006,High
+
